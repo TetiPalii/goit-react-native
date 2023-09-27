@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     text: {
         marginBottom: 32,
         fontFamily: 'Roboto-Regular',
-        fontWeight:500,
+        fontWeight:'500',
         fontSize: 30,
         letterSpacing:0.3,
         textAlign:'center'

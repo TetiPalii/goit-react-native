@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextInput, View, StyleSheet } from "react-native";
 
 
 export const FormInput = ({ placeholder }) => {
-  return <TextInput placeholder={placeholder} style={styles.form} />
+  const [text, setText] = useState('');
+  
+
+  return <TextInput placeholder={placeholder} style={styles.form} onChangeText={setText} value={text} />
 
 };
 
 const styles = StyleSheet.create({
   form: {
-   
+
     height: 50,
     backgroundColor: "#F6F6F6",
     borderColor: '#E8E8E8',
